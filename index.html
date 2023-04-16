@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="box">
+            <div class="top">
+                <a href="">10:30</a>
+                <div class="wifi">    <i class="ri-wifi-fill" ></i>
+                    <i class="ri-battery-low-fill"></i></div>
+            
+            </div>
+        
+            <div id="nav">
+                <i class="ri-menu-fill"></i>
+                <a href="">Temperature Converter</a>
+                <i class="ri-refresh-line"></i>
+                <i class="ri-more-2-line"></i>
+
+            </div>
+            <div class="input">
+                <label for="temp">Temperature</label>
+                <input class="tempinput" name="temp" type="number" id="temp">
+            </div>
+            <div class="input">
+                <label for="fromunit">From</label>
+                <select class="unit tempinput" id="fromunit">
+                    <option value="cel">Celsius (°C)</option>
+                    <option value="fah">Faherenheit (°F)</option>
+                    <option value="kel">Kelvin (K)</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="tounit">To</label>
+                <select class="unit tempinput" id="tounit">
+                    <option value="cel">Celsius (°C)</option>
+                    <option selected value="fah">Faherenheit (°F)</option>
+                    <option value="kel">Kelvin (K)</option>
+                </select>
+            </div>
+            <div class="tempinput" id="result">
+                <!-- <h5>Result</h5> -->
+                <h3><span id="temp-res"></span> <span id="unit-res"></span></h3>
+            </div>
+            <input id="convert" class="tempinput" type="submit" value="Convert">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
